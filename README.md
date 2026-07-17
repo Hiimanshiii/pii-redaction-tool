@@ -80,33 +80,6 @@ Ensure you have Python 3.10+ installed.
    ```bash
    python -m spacy download en_core_web_sm
    ```
-
-## Running Locally
-
-To run the command-line orchestrator:
-```bash
-python main.py
-```
-This processes `input/Red Herring Prospectus.docx` and generates `output/redacted_prospectus.docx`.
-
-To run the unit and integration tests:
-```bash
-python -m unittest discover -s tests -p "test_*.py"
-```
-
-To run the evaluation benchmarks:
-```bash
-python -m evaluation.evaluate
-```
-
-## Running Streamlit
-
-Start the interactive dashboard interface:
-```bash
-streamlit run streamlit_app.py
-```
-Open the local URL (default: `http://localhost:8501`) to access the web GUI.
-
 ## Project Structure
 
 ```text
